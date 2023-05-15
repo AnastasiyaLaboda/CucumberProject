@@ -1,6 +1,6 @@
-package com.it_academy.onliner.pages;
+package com.it_academy.pages;
 
-import com.it_academy.onliner.driver.DriverManager;
+import com.it_academy.driver.DriverManager;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 

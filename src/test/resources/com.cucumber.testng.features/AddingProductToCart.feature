@@ -5,15 +5,13 @@ Feature: As an open-web user
 
   Scenario: User can find a product and add it to the cart
     Given the user is navigated to Onliner website
-    When the user enters "Телевизор" in Search form
+    When the user enters "Наушники" in Search form
     And the user clicks on the 1 product in the search result
-    And the user clicks on the first seller's offer to_cart_button
-    And the user clicks on go_to_cart_button
-    Then the user can see the product's title
-    And the user can see the product's count
-    And the user can see the product's price
-    And the user can see the product's description
-
+    And the user add the 1 seller's offer product to the cart
+    And the user goes to the shopping cart
+    Then added to the cart product is displayed
+    And the product title is the same
+    And the product price is the same
 
 
 
